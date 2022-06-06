@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(235, 130, 130);
+    color: #555555;
+    font: normal 16px Arial, Helvetica,sans-serif;
+    line-height: 1.6em;
+    margin: 0;
+
+}
+.box-1{
+    background-color: #333;
+    color:rgb(221, 174, 18);
+    border: 5px red solid;
+    /* same as above */
+   border-right:  5px;
+   border-top:5px ;
+   border-left: 5px;
+   border-bottom: 5px;
+
+   border-width:3px;
+   border-bottom-width: 10px;
+   border-top-style: dotted;
+
+   padding:20px;
+   margin-top: 20px;
+   margin: 20px 0;
+}

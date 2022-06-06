@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Example Code</title>
+    <style>
+@media(min-width:468px){
+    .container-1{
+    display: flex;
+    /*
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: center;
+    align-items: stretch;
+
+    flex-direction: column;
+    flex-direction: row;
+    */
+}
+.container-2{
+    display: flex;
+    /*
+    justify-content: flex-start;/* used for margin 
+     justify-content: flex-end;
+      justify-content: center;
+      justify-content:space-between;
+    */ 
+    
+    justify-content:space-between;
+}
+.container-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+}
+
+.container-1 div, .container-2 div, .container-3 div{
+    border: 2px #ccc solid;
+    padding: 10px;
+}
+.box-1{
+    flex:2;   /* used for resizing  our boxes */
+    order: 2; /* used for ordering our boxes */
+}
+.box-2{
+    flex:1;
+    order: 1;
+}
+.box-3{
+    flex:1;
+    order: 3;
+}
+
+.container-2-box{
+    /* width: 30%;*/
+   flex-basis: 27%;/* used instead of  width*/
+    
+}
+.container-3-box{
+    flex-basis: 12%;
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h1>Box one</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box-2">
+            <h1>Box two</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box-3">
+            <h1>Box three</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="container-2-box">
+            <h1>Box four</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="container-2-box">
+            <h1>Box five</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="container-2-box">
+            <h1>Box six</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div class="container-3">
+        <div class="container-3-box">
+            <h1>Box seven</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="container-3-box">
+            <h1>Box eight</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="container-3-box">
+            <h1>Box nine</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="container-3-box">
+            <h1>Box ten</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="container-3-box">
+            <h1>Box eleven</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="container-3-box">
+            <h1>Box twelve</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</body>
+</html>

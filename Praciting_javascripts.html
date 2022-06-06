@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Scripts Examples</title>
+    <style>
+        .divStyle{
+            display: table-cell;
+            border: 5px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>On thi page right click is diabled.</h1>
+ <!--<div id="div1" class="divStyle">DIV-1
+        <div id="div2" class="divStyle">DIV-2
+            <div id="div3" class="divStyle">DIV-3
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var divs=document.getElementsByTagName("div");
+
+        for(var i=0; i<divs.length; i++){
+            divs[i].addEventListener("click",clickHandler,false);
+        }
+        
+        function clickHandler(){
+           // alert(this.getElementAttribute("id") + "click event handler");
+        }
+    </script>-->   
+
+    <div class="divStyle">
+        <form>
+            Email : <input type="email" id="txtEmail" onkeyup="validateEmail()">
+        </form>
+    </div>
+<script type="text/javascript">
+    document.oncontextmenu=preventDefaultActions;
+
+    function preventDefaultActions(event){
+        event = event  || window.event;
+
+        if(event.preventDefault){
+            event.preventDefault();
+        }
+        else{
+            event.returnValue = false;
+        }
+    }
+
+    // Email validation  
+    function validateEmail(){
+        var emailTextBox = document.getElementById("txtEmail");
+        var email = emailTextBox.value;
+        var emailRegExp = "";
+        //^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\")@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1-3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$ ;
+
+        if(emailRegExp.text(email)){
+            emailTextBox.style.backgroundColor = "green";
+        }
+        else{
+            emailTextBox.style.backgroundColor = "red";
+        }
+    }
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-2/css/bootstrap.min.css">
+    <title>Javascript tutioral</title>
+</head>
+<body>
+    <header>
+        <h1>Javascript tutioral</h1>
+        <p>Client side validation.Can be written head section or body section.</p>
+    </header>
+<p id="msg"></p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-sm-5">
+    <form class="form-group" id="myform">
+        <label for="username">username</label>
+        <input type="text" id="name" class="form-control">
+        <label for="userpassword">Email</label>
+        <input type="Email" id="email" class="form-control">
+        <br>
+        <input type="text" id="emailpart" class="form-control">
+        <br>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="button" class="btn btn-warning" onclick="getEmailParts()">Get Email Part</button>
+    </form>
+     </div>
+   </div>
+</div>
+<div>
+    <ul class="items" id="users">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+    </ul>
+</div>
+<br> <br>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-5">
+    <form id="mydomain-form" class="form-group">
+        <div>
+            <label for="url">Url</label>
+            <input type="text" id="txturl" class="form-control">
+        </div>
+        <div>
+            <label for="domain">Domain part</label>
+            <input type="text" id="txtdomain" class="form-control">
+        </div> 
+        <button type="button" class="btn btn-info" onclick="getDomainUrl()">Get Domain</button>
+    </form>
+</div>
+</div>
+</div>
+    
+    <script src="script.js"></script>
+
+<script type="text/javascript">
+    
+    function getEmailParts(){
+        var emailAddress =document.getElementById("email").value;
+        var emailPart = emailAddress.substring(0,emailAddress.indexOf("@"));
+
+        document.getElementById("emailpart").value = emailPart;
+    }
+    function getDomainUrl(){
+        var url=document.getElementById("txturl").value;
+        var domain=url.substring(url.lastIndexOf("."));
+
+        document.getElementById("txtdomain").value = domain;
+    }
+
+    
+</script>
+
+
+
+<br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:url('../images/cake.JPG') ;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+/* Navigational menubar*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #010101;
+}
+li{
+  float: left;
+}
+li a{
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a.active{
+    background-color: rgb(67, 197, 67);
+}
+li a:hover{
+    background-color: rgb(114, 160, 23);
+}
+
+/* login form  styling */
+.loginbox{
+    width: 400px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 80%;
+    position: absolute;
+    transform: translate(-200px,-200px);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 10%;
+    box-shadow: 10px 10px  rgb(29, 24, 24);
+}
+.smilepic{
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+/* moves an element according to 120px x-axis and 0px y-axis*/
+    transform: translate(120px, 0px);
+
+    /*
+    left: calc(50% - 50px);
+    */
+  
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    text-shadow: 2px 2px;
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="text"] , input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color:#fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #55e712;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(157, 245, 15);
+    color: rgb(163, 194, 194);
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: aliceblue;
+}
+.loginbox a:hover{
+    color: #55e712;
+}
+/*   links of email and phone */
+.under{
+    transform: translate(120px , 500px);
+}
+.under a{
+    color: #000;
+    text-decoration: none;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.under img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* make it responsive  website
+@media(max-width:468px){
+    .menulist,.loginbox,.under{
+        flex-direction: column;
+        width: 100%;
+    }
+}*/

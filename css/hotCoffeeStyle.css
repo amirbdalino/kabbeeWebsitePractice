@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    background-color: black;
+    color: white;
+}
+/* nav bar */
+#navConatiner{
+    background-color: black;
+    border: 3px;
+    border-bottom: rgb(224, 113, 9) solid;
+   /* position: sticky;
+    top: 0;*/
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*--Home page */
+#homecontainer{
+    padding: 0 50px;
+    margin: 20px;
+}
+.col1{
+    background-color: black;
+}
+.p-coffee{
+    margin-top: 0px;
+    padding: 0px;
+    text-align: justify;
+    color: white;
+}
+.btn_order{
+    background-color: rgb(224, 113, 9);
+    text-align: center;
+    border: none;
+    color: white;
+}
+.col2 #hotcoffee{
+   max-width: 100%;
+   height: auto;
+   background-size: cover;
+}
+
+/* About Container*/
+.btn_learnmore{
+    align-items: center;
+    text-decoration-color: rgb(224, 113, 9);
+    border: 3px;
+    border-bottom: rgb(224, 113, 9) solid;
+}
+
+/* lproducts*/
+.menu img{
+    width: 300px;
+    height: 300px;
+}
+h1{
+    border: 3px;
+    border-bottom: rgb(224, 113, 9) solid;
+}
+
+/*Customer Reviews*/
+.customer_pic{
+    width: 50px;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

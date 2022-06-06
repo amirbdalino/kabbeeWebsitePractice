@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 150px;
+
+}
+.navbar-style{
+    box-shadow: 0 5px 10px #efefef;
+}
+.logo{
+    height: 50px;
+    padding: 2px 10px;
+}
+.icon-bar{
+    background: darkorange;
+}
+li a{
+    color: black;
+}
+/*  image og carousel resizing */
+#hairstyle-img{
+    width: 1000px;
+    height: 400px;
+    border-bottom: 4px darkorange solid;
+    border-right:  4px darkorange solid;
+}
+#hairstyle-img2{
+    width: 1000px;
+    height: 400px;
+    border-bottom: 4px darkorange solid;
+    border-right:  4px darkorange solid;
+}#hairstyle-img3{
+    width: 1000px;
+    height: 400px;
+    border-bottom: 4px darkorange solid;
+    border-right:  4px darkorange solid;
+}
+.big-text{
+    font-size: 52px;
+    margin: 20px 0;
+    color: darkorange;
+}
+.small-text{
+    font-size: 20px;
+    font-weight: bold;
+}
+#container-2 .btn{
+    margin: 30px 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#container-2  .btn-first{
+    background-color: darkorange;
+    color: #fff;
+
+}
+#container-2  .btn-second{
+    background: transparent;
+    border: 1px solid darkorange;
+    color: #000;
+}
+#container-2 .btn:hover {
+    background: darkorange;
+    border: none;
+    color: #fff;
+    box-shadow: 5px 5px 10px #999;
+    transition: 1.0s;
+}

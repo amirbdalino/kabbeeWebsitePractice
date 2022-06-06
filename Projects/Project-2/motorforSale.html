@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="bike">
+        <nav>
+            <img src="logomotor.png" alt="logo" class="logo">
+            <a href="#" class="btn">Test Drive</a>
+        </nav>
+        <div class="content">
+            <h2>The Motors</h2>
+            <h1>G 310 R</h1>
+            <p>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Explicabo a tempore maiores eaque dolorum. Eius autem illo mollitia laborum, sequi, minus debitis quia ullam animi quisquam blanditiis explicabo reiciendis est!
+            </p>
+            <h3>Choose your Color</h3>
+            <div class="color-select">
+                <div id="red"></div>
+                <div id="blue"></div>
+                <div id="black"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let redBtn = document.getElementById("red");
+        let blueBtn = document.getElementById("blue");
+        let blackBtn = document.getElementById("black");
+       
+        let bike = document.getElementById("bike");
+    redBtn.onclick =function() {
+      bike.style.backgroundImage = "url(yellowmotor.jpg)";
+    }
+    blueBtn.onclick =function() {
+      bike.style.backgroundImage = "url(bluemotor.jpg)";
+    }
+    blackBtn.onclick =function() {
+      bike.style.backgroundImage = "url(blackmotor.jpg)";
+    }
+</script>
+</body>
+</html>

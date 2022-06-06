@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <title>Validaing Form</title>
+</head>
+<body>
+    <h1>Validated Form</h1>
+    <div class="container">
+        <div class="container">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <Label>Username</Label>
+                    <input id="username" type="text" class="form-control" placeholder="enter your name....">
+                </div>
+                <div class="form-group">
+                    <Label>ID</Label>
+                    <input id="userID" type="number" class="form-control" placeholder="enter your ID....">
+                </div>
+                <div class="form-group">
+                    <Label>Email</Label>
+                    <input id="useremail" type="email" class="form-control" placeholder="enter your email...." required>
+                </div>
+                <div class="form-group">
+                    <button id="btn" type="button" class="btn btn-lg btn-success" onclick="Validated()">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function Validated(){
+            // validate name //
+            // object , property , method, event//
+            if (document.getElementById("username").value== ""){
+                alert("pls enter your name !");
+                document.getElementById("username").value="";
+                document.getElementById("username").focus();
+            }else if(checkchar(document.getElementById("username").value)){
+                alert("pls enter alphabets only !");
+                document.getElementById("username").value="";
+                document.getElementById("username").focus();
+            }
+            // validate id //
+            if(document.getElementById("userID").value==""){
+                alert ("not valid ID !");
+                document.getElementById("userID").value="";
+                document.getElementById("userID").focus();
+            }
+            //valdate email //
+            
+          
+        }
+
+
+        // check if name is an alphabet //
+        function checkchar(str){
+            for(var i=0; i< str.length ; i++){
+                if(!((str.charAt(i) <= "z") && (str.charAt(i) >= "a")) ||
+                ((str.charAt(i) <= "Z") && (str.charAt(i) >= "A")) ){
+                    return true;
+                }
+                return false;
+            }
+        }
+        //mouse Over //
+        function mOver(obj){
+            obj.style.backgroundColor = "yellow";
+            obj.innerHTML = "Thank You";
+
+        }
+        //btn clicked//
+
+    </script>
+</body>
+</html>
